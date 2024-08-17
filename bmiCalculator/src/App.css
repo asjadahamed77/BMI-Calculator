@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    font-family: "Roboto Mono", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #535c68;
+}
+.bmi-calculator{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0px 25px 20px 0px rgba(0,0,0,0.25);
+    background: #fff;
+    border-radius: 8px;
+}
+.box{
+    width: 350px;
+    background-image: url('assets/BMI.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.data{
+    flex: 1;
+    padding: 15px;
+}
+.data h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #2980b9;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.input-container{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #888;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    outline: none;
+}
+button{
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+button:nth-of-type(2){
+    background: red;
+    
+    margin-left: 25px;
+}
+button:nth-of-type(2):hover{
+    background: rgb(213, 76, 76);
+}
+button:hover{
+    background: #2980b9;
+}
+.result{
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+}
+.result p{
+    
+    color: #555;
+}
+.result p:first-child{
+    margin-bottom: 10px;
+    color: #3498db;
+    font-weight: bold;
+}
+.error{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
